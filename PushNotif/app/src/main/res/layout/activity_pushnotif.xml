@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".PushnotifActivity">
+
+    <TextView
+        android:id="@+id/activity_pushnotif_title"
+        android:text="@string/main_page_title"
+
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/activity_pushnotif_regid_label"
+        android:text="Registration ID:"
+
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:layout_below="@+id/activity_pushnotif_title"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/activity_pushnotif_regid_result"
+        android:hint="@string/reg_id_hint"
+
+        android:layout_below="@+id/activity_pushnotif_regid_label"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/activity_pushnotif_regid_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/activity_pushnotif_button_reg"
+            android:text="Get REG ID"
+
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/activity_pushnotif_button_clear"
+            android:text="Clear REG ID"
+
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
